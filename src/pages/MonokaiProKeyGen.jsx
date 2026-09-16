@@ -18,10 +18,6 @@ function MonokaiProKeyGen() {
     }
 
     try {
-      if (isValid) {
-        return;
-      }
-
       const uuid = "fd330f6f-3f41-421d-9fe5-de742d0c54c0";
       const hash = md5(`${uuid}${email}`).slice(0, 25);
       const license = hash.match(/.{1,5}/g).join("-");
