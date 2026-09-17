@@ -3,6 +3,7 @@ import Rootlayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import WinrarKeyGen from "./pages/WinrarKeyGen";
 import MonokaiProKeyGen from "./pages/MonokaiProKeyGen";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             path="/monokai-pro-keygen"
             element={<MonokaiProKeyGen />}
           ></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
