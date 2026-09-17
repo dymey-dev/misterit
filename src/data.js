@@ -14,5 +14,13 @@ export const listData = [
         image: "",
         link: "/monokai-pro-keygen",
         is_visible: true
+    },
+    {
+        id: 3,
+        title: "Your Uninstaller",
+        description: "Your Uninstaller fully removes apps, clears registry and disk leftovers, manages startup items, and protects privacy with secure shredding.",
+        image: "",
+        link: "/your-uninstaller",
+        is_visible: true
     }
 ];

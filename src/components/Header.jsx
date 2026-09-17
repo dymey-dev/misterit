@@ -1,5 +1,6 @@
 import { themeChange } from "theme-change";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 export function Header() {
   const [theme] = useState(() => {
@@ -16,7 +17,9 @@ export function Header() {
   return (
     <div className="navbar bg-base-200 shadow-sm">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">MisterIT</a>
+        <Link to="/" className="btn btn-ghost text-xl">
+          MisterIT
+        </Link>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost btn-sm">
